@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   # need to touch package files since zip cannot handle timestamps < 1980
   script: "find  -type f  -exec touch {} + && {{ PYTHON }} -m pip install . --no-deps -vv"
 
